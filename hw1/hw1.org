@@ -1,0 +1,58 @@
+#+TITLE:     CIS192 Spring 2013 Homework 1
+#+AUTHOR:    Zachary Wasserman, Rafe Kettler, Ceasar Bautista
+#+DATE:      2013-01-30
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+OPTIONS:   creator:nil timestamp:nil author:nil postamble:nil
+#+BIND: org-export-html-postamble nil
+#+STYLE: <style type="text/css">div#content { width: 800px; }</style>
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+
+* Due Date
+  This homework is due 2012-02-05 at 23:59:59. It should be submitted through
+  our homework submission site (described below). Please start early and submit
+  with time to spare if you are unfamiliar with Git.
+
+* Preparation
+  You should have =pip= installed, as you will use it to install other packages.
+
+  Installing =pip= should be as easy as =sudo easy_install pip=.
+
+  Retrieve the materials for this assignment by pulling them down from the
+  'upstream' remote you created during HW0. Use the command =git pull upstream
+  master= in your homework directory as described in the "Working on Homework"
+  section of the
+  [[http://www.seas.upenn.edu/~cis192/submission/hwsubmission.html][submission instructions]].
+
+* Description
+  Implement the functions in the =hw1.py= file that you will retrieve from the
+  upstream git repository. Make sure you take full advantage of Python's online
+  documentation.
+
+  To run tests, run =python hw1.py=, or call the =main= function. We will test
+  your code with additional test cases beyond those provided. You should
+  implement your own test cases to assert the correctness of your submission.
+  Note that =nose= will automatically detect any test cases in functions with a
+  name starting with =test=. You may also use =doctest= as you see fit.
+
+* Grading
+  This assignment will be graded 60% on correctness, 40% on style. Try to be as
+  "Pythonic" as possible. We will provide commentary on your code style via the
+  Github submission system. You will have the opportunity to resubmit to improve
+  your style grade, but your correctness grade will be capped at that you
+  received on the initial submission.
+
+* Collaboration
+  While this course will have opportunities for collaboration, this is an
+  /individual/ assignment. All work you submit must be your own. If you use
+  resources outside of the official Python online documentation, you must cite
+  those resources by commenting your code. We take this seriously, and will use
+  all reasonable methods to ensure the integrity of course assignments.
