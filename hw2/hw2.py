@@ -159,7 +159,7 @@ class Property(object):
     >>> b.properties[0].address
     u'4400 Pine St'
     >>> b.properties[0].value
-    150000
+    375400
     >>> b.properties[0].owner_names
     [u'Ethyle Herman Irrevocable']
     >>> b.properties[0].owners
@@ -178,18 +178,17 @@ class Owner(object):
 
     >>> o = Owner("wawa")
     >>> o
-    Wawa (20 properties)
+    Wawa (18 properties)
     >>> o.name
     'Wawa'
     >>> o.properties
     [6400 Bustleton Ave, 6460 Bustleton Ave, 151 Byberry Rd, 4510 Castor Ave,
-    6925-35 Castor Ave, 8140 Castor Ave, 7701 Frankford Ave, 7715 Frankford
-    Ave, 9213-19 Frankford Ave, 2600L Grant Ave, 6001 Harbison Ave, 10550
-    Knights Rd, 7913-29 Oxford Ave, 2401 Pennsylvania Ave Unit: 14C48, 3222-48
-    Richmond St, 4371 Richmond St, 7301 Rockwell Ave, 8000 E Roosevelt Blv,
-    9440 State Rd, 6400-22 Torresdale Ave]
+    6925-35 Castor Ave, 8140 Castor Ave, 9213-19 Frankford Ave, 2600L Grant
+    Ave, 6001 Harbison Ave, 10550 Knights Rd, 7913-29 Oxford Ave, 2401
+    Pennsylvania Ave Unit: 14C48, 3222-48 Richmond St, 4371 Richmond St, 7301
+    Rockwell Ave, 8000 E Roosevelt Blv, 9440 State Rd, 6400-22 Torresdale Ave]
     >>> o.properties[0].owners
-    [Wawa Inc (17 properties)]
+    [Wawa Inc (15 properties)]
 
     """
     pass
@@ -203,7 +202,7 @@ def mean_value(block_or_owner):
 
     >>> block = Block(4000, "spruce st")
     >>> mean_value(block)
-    154011.63
+    413686.05
     """
     raise NotImplementedError()
 
@@ -215,10 +214,10 @@ def median_value(block_or_owner):
 
     >>> block = Block(4000, "spruce st")
     >>> median_value(block)
-    173300.0
+    396100.0
     >>> owner = Owner("wawa")
     >>> median_value(owner)
-    354400.0
+    594550.0
     """
     raise NotImplementedError()
 
@@ -230,12 +229,12 @@ def max_block_or_owner(*entities):
 
     >>> o1 = Owner("Wawa")
     >>> o1
-    Wawa (20 properties)
+    Wawa (18 properties)
     >>> o2 = Owner("citibank")
     >>> o2
     Citibank (8 properties)
     >>> max_block_or_owner(o1, o2)
-    Wawa (20 properties)
+    Wawa (18 properties)
     """
     raise NotImplementedError()
 
